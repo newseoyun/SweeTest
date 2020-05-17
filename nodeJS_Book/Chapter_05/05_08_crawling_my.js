@@ -43,6 +43,6 @@ http.createServer((req, res) => {
         res.end(data);
     })
 }).listen(3000, (err) => { 
-    if (err) throw err;
+    if(err) throw err;
     console.log('서버 기동 중'); 
 });
