@@ -1,0 +1,264 @@
+<!-- 주간예보 -->
+            <div id="weekly" class="card card_week">
+    <h2 class="title">주간예보</h2>
+    <strong class="help_icon">날씨아이콘 <button type="button" class="ico_help" onclick="nclk_v2(this, 'wtk.weekicn', '', '')"><span class="blind">도움말</span></button></strong>
+    <div class="ly_help">
+        <strong class="ly_ttl">날씨아이콘</strong>
+        <ul class="weather_list"></ul>
+        <button class="btn_close" onclick="nclk_v2(this, 'wtw.weekicn', '', '')"><span class="blind">도움말 닫기</span></button>
+    </div>
+    <ul class="box_color">
+        <li class="item">
+            <span class="color_inner">
+                <span class="color_cell">
+                    <strong class="ttl">오늘<span class="sub">오전</span></strong>
+                </span>
+                <span class="color_cell">
+                    <i class="ico _cnLazy" data-ico="ico_wt5"><span class="blind">구름많음</span></i>
+                    <span class="data"><span class="blind">평균기온</span>15<span class="degree">°</span></span>
+                </span>
+            </span>
+        </li>
+        <li class="item">
+            <span class="color_inner">
+                <span class="color_cell">
+                    <strong class="ttl">오늘<span class="sub">오후</span></strong>
+                </span>
+                <span class="color_cell">
+                    <i class="ico _cnLazy" data-ico="ico_wt22"><span class="blind">구름많고 한때 비</span></i>
+                    <span class="data"><span class="blind">평균기온</span>24<span class="degree">°</span></span>
+                </span>
+            </span>
+        </li>
+    </ul>
+    <div class="scroll_control end_left">
+        <div class="scroll_area" data-name="weekly" data-click="false" data-nclk="wtk.weekscr">
+            <ul class="week_list">
+                <li class="week_item today">
+                    <div class="day_data">
+                        <div class="cell_date">
+                        <span class="date_inner">
+                            <strong class="day">오늘</strong><span class="date">5.17.</span>
+                        </span>
+                        </div>
+                        <div class="cell_weather">
+                        <span class="weather_inner" data-wetr-cd="5" data-wetr-txt="구름많음">
+                            <strong class="timeslot">오전</strong>
+                            <i class="ico _cnLazy" data-ico="ico_wt5"><span class="blind">구름많음</span></i>
+                        </span>
+                            <span class="weather_inner" data-wetr-cd="22" data-wetr-txt="구름많고 한때 비">
+                            <strong class="timeslot">오후</strong>
+                            <i class="ico _cnLazy" data-ico="ico_wt22"><span class="blind">구름많고 한때 비</span></i>
+                        </span>
+                        </div>
+                        <div class="cell_temperature">
+                            <strong class="temperature"><span class="blind">최저기온</span>15°<span class="bar">/</span><span class="blind">최고기온</span>24°</strong>
+                        </div>
+                    </div>
+                </li>
+                <li class="week_item">
+                    <div class="day_data">
+                        <div class="cell_date">
+                        <span class="date_inner">
+                            <strong class="day">내일</strong><span class="date">5.18.</span>
+                        </span>
+                        </div>
+                        <div class="cell_weather">
+                        <span class="weather_inner" data-wetr-cd="22" data-wetr-txt="흐리고 한때 비">
+                            <strong class="timeslot">오전</strong>
+                            <i class="ico _cnLazy" data-ico="ico_wt22"><span class="blind">흐리고 한때 비</span></i>
+                        </span>
+                            <span class="weather_inner" data-wetr-cd="22" data-wetr-txt="흐리고 가끔 비">
+                            <strong class="timeslot">오후</strong>
+                            <i class="ico _cnLazy" data-ico="ico_wt22"><span class="blind">흐리고 가끔 비</span></i>
+                        </span>
+                        </div>
+                        <div class="cell_temperature">
+                            <strong class="temperature"><span class="blind">최저기온</span>17°<span class="bar">/</span><span class="blind">최고기온</span>25°</strong>
+                        </div>
+                    </div>
+                </li>
+                <li class="week_item ">
+                        <div class="day_data">
+                            <div class="cell_date">
+                                <span class="date_inner">
+                                    <strong class="day">화</strong><span class="date">5.19.</span>
+                                </span>
+                            </div>
+                            <div class="cell_weather">
+                            <span class="weather_inner" data-wetr-cd="22" data-wetr-txt="흐리고 가끔 비">
+                                <strong class="timeslot">오전</strong>
+                                <i class="ico _cnLazy" data-ico="ico_wt22"><span class="blind">흐리고 가끔 비</span></i>
+                            </span>
+                                <span class="weather_inner" data-wetr-cd="22" data-wetr-txt="구름많고 한때 비">
+                                <strong class="timeslot">오후</strong>
+                                <i class="ico _cnLazy" data-ico="ico_wt22"><span class="blind">구름많고 한때 비</span></i>
+                            </span>
+                            </div>
+                            <div class="cell_temperature">
+                                <strong class="temperature"><span class="blind">최저기온</span>12°<span class="bar">/</span><span class="blind">최고기온</span>17°</strong>
+                            </div>
+                        </div>
+                    </li>
+                <li class="week_item ">
+                        <div class="day_data">
+                            <div class="cell_date">
+                                <span class="date_inner">
+                                    <strong class="day">수</strong><span class="date">5.20.</span>
+                                </span>
+                            </div>
+                            <div class="cell_weather">
+                            <span class="weather_inner" data-wetr-cd="5" data-wetr-txt="구름많음">
+                                <strong class="timeslot">오전</strong>
+                                <i class="ico _cnLazy" data-ico="ico_wt5"><span class="blind">구름많음</span></i>
+                            </span>
+                                <span class="weather_inner" data-wetr-cd="5" data-wetr-txt="구름많음">
+                                <strong class="timeslot">오후</strong>
+                                <i class="ico _cnLazy" data-ico="ico_wt5"><span class="blind">구름많음</span></i>
+                            </span>
+                            </div>
+                            <div class="cell_temperature">
+                                <strong class="temperature"><span class="blind">최저기온</span>12°<span class="bar">/</span><span class="blind">최고기온</span>20°</strong>
+                            </div>
+                        </div>
+                    </li>
+                <li class="week_item ">
+                        <div class="day_data">
+                            <div class="cell_date">
+                                <span class="date_inner">
+                                    <strong class="day">목</strong><span class="date">5.21.</span>
+                                </span>
+                            </div>
+                            <div class="cell_weather">
+                            <span class="weather_inner" data-wetr-cd="5" data-wetr-txt="구름많음">
+                                <strong class="timeslot">오전</strong>
+                                <i class="ico _cnLazy" data-ico="ico_wt5"><span class="blind">구름많음</span></i>
+                            </span>
+                                <span class="weather_inner" data-wetr-cd="5" data-wetr-txt="구름많음">
+                                <strong class="timeslot">오후</strong>
+                                <i class="ico _cnLazy" data-ico="ico_wt5"><span class="blind">구름많음</span></i>
+                            </span>
+                            </div>
+                            <div class="cell_temperature">
+                                <strong class="temperature"><span class="blind">최저기온</span>12°<span class="bar">/</span><span class="blind">최고기온</span>23°</strong>
+                            </div>
+                        </div>
+                    </li>
+                <li class="week_item ">
+                        <div class="day_data">
+                            <div class="cell_date">
+                                <span class="date_inner">
+                                    <strong class="day">금</strong><span class="date">5.22.</span>
+                                </span>
+                            </div>
+                            <div class="cell_weather">
+                            <span class="weather_inner" data-wetr-cd="5" data-wetr-txt="구름많음">
+                                <strong class="timeslot">오전</strong>
+                                <i class="ico _cnLazy" data-ico="ico_wt5"><span class="blind">구름많음</span></i>
+                            </span>
+                                <span class="weather_inner" data-wetr-cd="7" data-wetr-txt="흐림">
+                                <strong class="timeslot">오후</strong>
+                                <i class="ico _cnLazy" data-ico="ico_wt7"><span class="blind">흐림</span></i>
+                            </span>
+                            </div>
+                            <div class="cell_temperature">
+                                <strong class="temperature"><span class="blind">최저기온</span>14°<span class="bar">/</span><span class="blind">최고기온</span>23°</strong>
+                            </div>
+                        </div>
+                    </li>
+                <li class="week_item ">
+                        <div class="day_data">
+                            <div class="cell_date">
+                                <span class="date_inner">
+                                    <strong class="day">토</strong><span class="date">5.23.</span>
+                                </span>
+                            </div>
+                            <div class="cell_weather">
+                            <span class="weather_inner" data-wetr-cd="5" data-wetr-txt="구름많음">
+                                <strong class="timeslot">오전</strong>
+                                <i class="ico _cnLazy" data-ico="ico_wt5"><span class="blind">구름많음</span></i>
+                            </span>
+                                <span class="weather_inner" data-wetr-cd="7" data-wetr-txt="흐림">
+                                <strong class="timeslot">오후</strong>
+                                <i class="ico _cnLazy" data-ico="ico_wt7"><span class="blind">흐림</span></i>
+                            </span>
+                            </div>
+                            <div class="cell_temperature">
+                                <strong class="temperature"><span class="blind">최저기온</span>15°<span class="bar">/</span><span class="blind">최고기온</span>24°</strong>
+                            </div>
+                        </div>
+                    </li>
+                <li class="week_item  type_only hide">
+                        <div class="day_data">
+                            <div class="cell_date">
+                                <span class="date_inner">
+                                    <strong class="day">일</strong><span class="date">5.24.</span>
+                                </span>
+                            </div>
+                            <div class="cell_weather">
+                            <span class="weather_inner" data-wetr-cd="9" data-wetr-txt="흐리고 비">
+                                <strong class="timeslot">오전</strong>
+                                <i class="ico _cnLazy" data-ico="ico_wt9"><span class="blind">흐리고 비</span></i>
+                            </span>
+                                <span class="weather_inner" data-wetr-cd="9" data-wetr-txt="흐리고 비">
+                                <strong class="timeslot">오후</strong>
+                                <i class="ico _cnLazy" data-ico="ico_wt9"><span class="blind">흐리고 비</span></i>
+                            </span>
+                            </div>
+                            <div class="cell_temperature">
+                                <strong class="temperature"><span class="blind">최저기온</span>14°<span class="bar">/</span><span class="blind">최고기온</span>23°</strong>
+                            </div>
+                        </div>
+                    </li>
+                <li class="week_item  type_only hide">
+                        <div class="day_data">
+                            <div class="cell_date">
+                                <span class="date_inner">
+                                    <strong class="day">월</strong><span class="date">5.25.</span>
+                                </span>
+                            </div>
+                            <div class="cell_weather">
+                            <span class="weather_inner" data-wetr-cd="7" data-wetr-txt="흐림">
+                                <strong class="timeslot">오전</strong>
+                                <i class="ico _cnLazy" data-ico="ico_wt7"><span class="blind">흐림</span></i>
+                            </span>
+                                <span class="weather_inner" data-wetr-cd="7" data-wetr-txt="흐림">
+                                <strong class="timeslot">오후</strong>
+                                <i class="ico _cnLazy" data-ico="ico_wt7"><span class="blind">흐림</span></i>
+                            </span>
+                            </div>
+                            <div class="cell_temperature">
+                                <strong class="temperature"><span class="blind">최저기온</span>15°<span class="bar">/</span><span class="blind">최고기온</span>24°</strong>
+                            </div>
+                        </div>
+                    </li>
+                <li class="week_item  type_only hide">
+                        <div class="day_data">
+                            <div class="cell_date">
+                                <span class="date_inner">
+                                    <strong class="day">화</strong><span class="date">5.26.</span>
+                                </span>
+                            </div>
+                            <div class="cell_weather">
+                            <span class="weather_inner" data-wetr-cd="5" data-wetr-txt="구름많음">
+                                <strong class="timeslot">오전</strong>
+                                <i class="ico _cnLazy" data-ico="ico_wt5"><span class="blind">구름많음</span></i>
+                            </span>
+                                <span class="weather_inner" data-wetr-cd="5" data-wetr-txt="구름많음">
+                                <strong class="timeslot">오후</strong>
+                                <i class="ico _cnLazy" data-ico="ico_wt5"><span class="blind">구름많음</span></i>
+                            </span>
+                            </div>
+                            <div class="cell_temperature">
+                                <strong class="temperature"><span class="blind">최저기온</span>15°<span class="bar">/</span><span class="blind">최고기온</span>24°</strong>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+        <button type="button" class="button_more" onclick="nclk_v2(this, 'wtk.weekmor', '', '')">더보기</button>
+        <button type="button" class="btn_prev" onclick="nclk_v2(this, 'wtk.weekarclk', '', '')"><span class="blind">이전 보기</span></button>
+        <button type="button" class="btn_next" onclick="nclk_v2(this, 'wtk.weekarclk', '', '')"><span class="blind">다음 보기</span></button>
+    </div>
+    <p class="offer_area mobile_hide">현재날씨 05.17. 16:30, 시간대별 날씨 05.17. 16:30, 주간날씨 05.17. 11:00 발표. 발표 <a href="http://www.weather.go.kr/" target="_blank" class="link_go" onclick="nclk_v2(this, 'wtk.weekref', '', '')">기상청</a> 제공 <a href="https://www.weatheri.co.kr/" target="_blank" class="link_go" onclick="nclk_v2(this, 'wtk.weekref', '', '')">웨더아이</a></p>
+</div>
