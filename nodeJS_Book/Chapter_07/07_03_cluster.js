@@ -11,7 +11,7 @@ cpu의 코어 개수만큼 서브클러스터(워커)를 fork하고
     + 워커 생성 시 online 이벤트, 죽으면 exit 이벤트 발생
     + 마스터는 계속 살아있어야되니까 되도록 워커들 관리만하는 작은 로직으로 구성하고 
         무겁고 복잡한 구체적 작업은 워커들이 하는 것이 좋다.
-
+    + 서로 세션 공유가 안됨 주의
 */
 
 const cluster = require('cluster');
@@ -24,7 +24,7 @@ if(cluster.isMaster){
     
     const messageHandler = (msg) => {
         if(msg.cmd && msg.cmd == "notifyRequest"){
-            console.log("워커가 메시지를 받았음. +1");
+            console.log("메시지를 받았음. +1");
             numReqs += 1;
         }
     }
@@ -35,8 +35,8 @@ if(cluster.isMaster){
         console.log("포크 뿡");
     }
     
-    Object.keys(cluster.workers).forEach( (id) => {
-        cluster.workers[id].on('message', messageHandler); // 워커가 message 이벤트를 감지하면 messageHandler를 실행
+    Object.keys(cluster.workers).forEach( (id) => {         // workers - worker 공식문서 참고
+        cluster.workers[id].on('message', messageHandler); // message 이벤트를 감지하면 messageHandler를 실행
     });
 }else{
     http.Server((req, res) => {
